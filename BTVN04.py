@@ -1,5 +1,3 @@
-from datetime import datetime
-
 patient_records = [
     "BN001-Nguyen Van A-1985-Viem Phoi",
     "BN002-Tran Thi B-1990-Sot Xuat Huyet",
@@ -43,7 +41,7 @@ def add_patient(records):
     name = input("Nhập tên bệnh nhân: ")
     name = name.replace("-", " ").strip().title()
 
-    current_year = datetime.now().year
+    current_year = 2026
 
     while True:
         birth_year = input("Nhập năm sinh: ").strip()
@@ -99,7 +97,7 @@ def update_diagnosis(records):
 
 
 def generate_age_report(records):
-    current_year = datetime.now().year
+    current_year = 2026
 
     children = 0
     adults = 0
